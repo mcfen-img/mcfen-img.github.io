@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>「梦里幽境」免费图床</title>
+    <link href="./img/favicon.png" rel="icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="keywords" content="新浪图床,搜狗图床,淘宝图床,网易图床,图片上传,搜狗图床,图片上传"/>
+    <meta name="description" content="我的世界 梦里幽境 群组服"/>
+    <link rel="stylesheet" type="text/css" href="css/fileinput.min.css">
+    <link rel="stylesheet" type="text/css" href="static/iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="static/newicon/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="static/uploadicon/iconfont.css">
+
+
+    <link rel="stylesheet" type="text/css" href="static/mdui/0.4.1/css/mdui.min.css">
+    <link rel="stylesheet" type="text/css" href="static/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body class="mdui-theme-accent-indigo mdui-appbar-with-toolbar ">
+
+    <div class="mdui-appbar mdui-appbar-fixed">
+        <div class="mdui-toolbar mdui-color-black">
+            <span mdui-drawer="{target: '#menu'}" class="mdui-btn mdui-btn-icon open-menu"><i
+                class="mdui-icon material-icons">☯</i></span>
+                <a href="" class="mdui-typo-headline"><img style="width:145px;" src="./img/0.png" ></a>
+                <div class="mdui-toolbar-spacer"></div>
+
+                <a href="" class="mdui-btn"><i class="mdui-icon material-icons">梦里幽境</i> Mcfen</a>
+
+            </div>
+        </div>
+
+        <div id="menu" class="mdui-drawer mdui-drawer-close">
+            <div class="mdui-list" mdui-collapse="{accordion: true}">
+                         <a class="mdui-list-item mdui-ripple" href="index.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-ali mdui-text-color-orange"></i>
+                <div class="mdui-list-item-content">阿里图床</div>
+            </a>
+                         <a class="mdui-list-item mdui-ripple" href="sh.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-souhu mdui-text-color-orange"></i>
+                <div class="mdui-list-item-content">搜狐图床</div>
+            </a>
+                         <a class="mdui-list-item mdui-ripple" href="hl.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-sm mdui-text-color-blue"></i>
+                <div class="mdui-list-item-content">侠聚图床</div>
+            </a>
+                         <a class="mdui-list-item mdui-ripple" href="jd.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-jingdong mdui-text-color-red"></i>
+                <div class="mdui-list-item-content">京东图床</div>
+            </a>
+                         <a class="mdui-list-item mdui-ripple" href="tt.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-toutiao mdui-text-color-red"></i>
+                <div class="mdui-list-item-content">头条图床</div>
+            </a>
+                         <a class="mdui-list-item mdui-ripple" href="wy.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-wangyi mdui-text-color-red"></i>
+                <div class="mdui-list-item-content">网易图床</div>
+            </a>
+                         <a class="mdui-list-item mdui-ripple" href="qq.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-dispatch mdui-text-color-blue"></i>
+                <div class="mdui-list-item-content">腾讯图床</div>
+            </a>
+            
+            <a class="mdui-list-item mdui-ripple " href="about.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-icons-code mdui-text-color-red"></i>
+                <div class="mdui-list-item-content">说明</div>
+            </a>
+            
+        </div>
+    </div>
+
+    
+<div class="mdui-container">
+    <main>
+        <div class="upload-container">
+    <div class="title">
+        <h1>阿里图床
+            <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-ali mdui-text-color-orange"></i>
+        </h1>
+        <p>最大可上传 5 M的图片，单次同时可选择 20 张。</p>
+    </div>
+    <form action="" method="post" enctype="multipart/form-data">
+        <input id="image" style="display: none;" type="file" multiple name="image" accept="image/*">
+    </form>
+    <div class="success-info">
+        <div class="mdui-tab mdui-tab-scrollable" mdui-tab>
+            <a href="#code-url" class="mdui-ripple mdui-tab-active">URL</a>
+            <a href="#code-html" class="mdui-ripple">HTML</a>
+            <a href="#code-bbcode" class="mdui-ripple">BBCode</a>
+            <a href="#code-markdown" class="mdui-ripple">Markdown</a>
+            <a href="#code-markdown-with-link" class="mdui-ripple">Markdown with link</a>
+        </div>
+        <div id="code-url">
+            <ul></ul>
+        </div>
+        <div id="code-html">
+            <ul></ul>
+        </div>
+        <div id="code-bbcode">
+            <ul></ul>
+        </div>
+        <div id="code-markdown">
+            <ul></ul>
+        </div>
+        <div id="code-markdown-with-link">
+            <ul></ul>
+        </div>
+    </div>
+</div>
+    </main>
+</div>
+
+
+    <div class="mdui-fab-wrapper">
+        <button id="to-top" class="mdui-fab mdui-ripple mdui-fab-hide mdui-color-theme-accent">
+            <i class="mdui-icon material-icons">&#xe5d8;</i>
+        </button>
+    </div>
+    <div id="loading-container">
+        <div class="mask"></div>
+        <div class="loading">
+            <div class="mdui-spinner mdui-spinner-colorful"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="text-center">
+            Copyright © 2014-2020 ALL Rights Reserved.&nbsp;<a title="梦里幽境">梦里幽境</a>
+        </div>
+    </footer>
+</body>
+<!-- 梦里幽境送你一朵小红心 -->
+<script type="text/javascript" src="static/js/love.js"></script>
+
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/mdui.min.js"></script>
+<script src="static/js/app.js"></script>
+<script src="static/js/clipboard.min.js"></script>
+<script src="static/js/fileinput.min.js"></script>
+<script src="static/js/zh.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script>
+// mdui.snackbar({
+//   message: '支持复制粘贴上传拉~'
+// });
+ /************检测粘贴上传图片**************/
+        document.addEventListener('paste', function (event) {
+            // console.log(event);
+            var isChrome = false;
+            if (event.clipboardData || event.originalEvent) {
+            //某些chrome版本使用的是event.originalEvent
+            var clipboardData = (event.clipboardData || event.originalEvent.clipboardData);
+            if(clipboardData.items){
+                // for chrome
+                var  items = clipboardData.items,
+                len = items.length,
+                blob = null;
+                isChrome = true;
+                for (var i = 0; i < len; i++) {
+                    // console.log(items[i]);
+                    if (items[i].type.indexOf("image") !== -1) {
+                        //getAsFile() 此方法只是living standard firefox ie11 并不支持
+                        blob = items[i].getAsFile();
+                    }
+                }
+                if(blob!==null){
+                    mdui.confirm('检测到了您粘贴了图片是否上传?','提示:',function(){
+                        var fd = new FormData(document.forms[0]);
+                        fd.append("image", blob, 'copy.png');
+                    //创建XMLHttpRequest对象
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('POST','https://image.kieng.cn/upload.html?type=ali' );
+                    xhr.onload = function () {
+                        if ( xhr.readyState === 4 ) {
+                            var data = JSON.parse( xhr.responseText );
+                            if (data.code === 200 ) {
+                                app.msg(true,data.data.name+"上传完成");
+                                $("#code-url ul").prepend("<li>" + data.data.url + "<i class=\"copy iconfont icon-copy\"></i></li>");
+                                $("#code-html ul").prepend("<li>&lt;img src=\"" + data.data.url + "\" alt=\"" + data.data.name + "\" title=\"" + data.data.name + "\" /&gt;<i class=\"copy iconfont icon-copy\"></i></li>");
+                                $("#code-bbcode ul").prepend("<li>[img]" + data.data.url + "[/img]<i class=\"copy iconfont icon-copy\"></i></li>");
+                                $("#code-markdown ul").prepend("<li>![" + data.data.name + "](" + data.data.url + ")<i class=\"copy iconfont icon-copy\"></i></li>");
+                                $("#code-markdown-with-link ul").prepend("<li>[![" + data.data.name + "](" + data.data.url + ")](" + data.data.url + ")<i class=\"copy iconfont icon-copy\"></i></li>");
+                                $(".success-info").css("width", "inherit");
+                                if (data.data.quota && data.data.use_quota) {
+                                    $('.quota-container progress').attr('max', data.data.quota);
+                                    $('.quota-container progress').val(data.data.use_quota);
+                                    $('.quota-container span.quota').text(app.bytesToSize(data.data.quota));
+                                    $('.quota-container span.use-quota').text(app.bytesToSize(data.data.use_quota));
+                                }
+                            } else {
+                                mdui.alert(data.msg);
+                            }
+                        };
+                    };
+                    xhr.onerror = function (e) {
+                        mdui.alert(data.msg);
+                    }
+                    xhr.send(fd);
+                },
+                function(){
+                    // mdui.alert('取消');
+                },
+                {confirmText:'上传',cancelText:'取消'},
+                );
+                    
+                }
+            }
+        }
+    })
+        /***************检测粘贴上传图片结束*******************/ 
+</script>
+<script>
+
+    var clipboard = new ClipboardJS('.copy', {
+        text: function (trigger) {
+            return $(trigger).parent('li').text();
+        }
+    });
+
+    clipboard.on('success', function (e) {
+        app.msg(true, '复制成功');
+    });
+
+    clipboard.on('error', function (e) {
+        app.msg(false, '复制失败');
+    });
+
+    $("#image").fileinput({
+        uploadUrl: "https://image.kieng.cn/upload.html?type=ali",
+        language: "zh",
+        uploadAsync: true,
+        overwriteInitial: false,
+        
+        maxFileSize: "5120",
+        maxFileCount: "20",
+        showCaption: true,
+        dropZoneEnabled: true,
+        browseIcon: "<i class=\"glyphicon glyphicon-picture\"></i> ",
+        allowedFileExtensions: JSON.parse('["jpg","jpeg","gif","png","ico"]'),
+        uploadExtraData: {
+            "_xsrf":"Sisfk2617hDxONTfYZ1HJCGR1r7dC5EH",
+            "apiSelect": "Local"
+        }
+    }).on("fileuploaded", function (event, data, previewId, index) {
+        var form = data.form, files = data.files, extra = data.extra, response = data.response, reader = data.reader;
+        if (200 === response.code) {
+            app.msg(true,response.data.name+"上传完成");
+            $("#code-url ul").prepend("<li>" + response.data.url + "<i class=\"copy iconfont icon-copy\"></i></li>");
+            $("#code-html ul").prepend("<li>&lt;img src=\"" + response.data.url + "\" alt=\"" + response.data.name + "\" title=\"" + response.data.name + "\" /&gt;<i class=\"copy iconfont icon-copy\"></i></li>");
+            $("#code-bbcode ul").prepend("<li>[img]" + response.data.url + "[/img]<i class=\"copy iconfont icon-copy\"></i></li>");
+            $("#code-markdown ul").prepend("<li>![" + response.data.name + "](" + response.data.url + ")<i class=\"copy iconfont icon-copy\"></i></li>");
+            $("#code-markdown-with-link ul").prepend("<li>[![" + response.data.name + "](" + response.data.url + ")](" + response.data.url + ")<i class=\"copy iconfont icon-copy\"></i></li>");
+            $(".success-info").css("width", "inherit");
+            if (response.data.quota && response.data.use_quota) {
+                $('.quota-container progress').attr('max', response.data.quota);
+                $('.quota-container progress').val(response.data.use_quota);
+                $('.quota-container span.quota').text(app.bytesToSize(response.data.quota));
+                $('.quota-container span.use-quota').text(app.bytesToSize(response.data.use_quota));
+            }
+        } else if (500 === response.code) {
+            mdui.alert(response.msg, '发生异常');
+        } else {
+            mdui.alert(response.msg);
+        }
+    });
+    $('#image').css("display", "block");
+</script>
+
+<script>
+    $(function () {
+        var toTop = $("#to-top"), toTopHide = function () {
+            if ($(window).scrollTop() > 50) {
+                toTop.removeClass('mdui-fab-hide');
+            } else {
+                toTop.addClass('mdui-fab-hide');
+            }
+        };
+        if ($(window).scrollTop() > 50) {
+            toTopHide();
+        }
+        $(window).scroll(function () {
+            toTopHide();
+        });
+
+        toTop.click(function () {
+            $('body,html').animate({scrollTop: 0}, 500);
+        });
+
+        $('.open-menu').click(function () {
+            if ($(window).width() > 1024) {
+                app.cookie.set('menu', $('body').hasClass('mdui-drawer-body-left') ? 'open' : 'close', 10, '/');
+            }
+        });
+    });
+</script>
+</html>
