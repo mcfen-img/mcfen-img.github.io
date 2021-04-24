@@ -80,7 +80,7 @@
     <main>
         <div class="upload-container">
     <div class="title">
-        <h1>阿里图床
+        <h1>京东图床
             <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-ali mdui-text-color-orange"></i>
         </h1>
         <p>最大可上传 5 M的图片，单次同时可选择 20 张。</p>
@@ -140,7 +140,7 @@
 	反馈邮箱&nbsp;
 	</a>|<a href="tencent://groupwpa/?subcmd=all&param=7B2267726F757055696E223A3132393835383238362C2274696D655374616D70223A313532373535393731327D0A" title="点击加群">&nbsp;
 	联系我们</a>
-	&nbsp;&nbsp;&nbsp;Copyright © 2014-2020</p>
+	&nbsp;&nbsp;&nbsp;Copyright © 2014-2021</p>
 
     </footer>
 </body>
@@ -184,7 +184,7 @@
                         fd.append("image", blob, 'copy.png');
                     //创建XMLHttpRequest对象
                     var xhr = new XMLHttpRequest();
-                    xhr.open('POST','https://image.kieng.cn/upload.html?type=ali' );
+                    xhr.open('POST','https://image.kieng.cn/upload.html?type=jd' );
                     xhr.onload = function () {
                         if ( xhr.readyState === 4 ) {
                             var data = JSON.parse( xhr.responseText );
@@ -241,7 +241,7 @@
     });
 
     $("#image").fileinput({
-        uploadUrl: "https://image.kieng.cn/upload.html?type=ali",
+        uploadUrl: "https://image.kieng.cn/upload.html?type=jd",
         language: "zh",
         uploadAsync: true,
         overwriteInitial: false,
